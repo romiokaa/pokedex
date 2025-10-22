@@ -9,5 +9,6 @@ app.use(express.json());
 
 app.use('/pokemons', pokemonsRoutes);
 app.use('/pokemons', weatherRoutes);
+setupMetrics(app);
 
 app.listen(3000, () => console.log('Serveur lancé sur http://localhost:3000'));
